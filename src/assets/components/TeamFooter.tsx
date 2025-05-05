@@ -4,24 +4,24 @@ import { Card } from "../components/ui/card";
 const TeamFooter = () => {
   const team = [
     {
-      name: "Dr. Sarah Chen",
-      role: "Lead Researcher",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      name: "M Bilal Afzal",
+      role: "Team Member",
+      image: "/mBilal.png",
     },
     {
-      name: "Alex Martinez",
-      role: "AI Engineer",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      name: "Anas Arshad",
+      role: "Team Member",
+      image: "/public/anast.jpeg",
     },
     {
-      name: "Dr. James Wilson",
-      role: "Data Scientist",
-      image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb",
+      name: "Anas Tahir",
+      role: "Team Member",
+      image: "/public/anasa.jpeg",
     },
     {
-      name: "Emily Taylor",
-      role: "ML Engineer",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+      name: "M Mubashir ",
+      role: "Team Member",
+      image: "/public/mubashir.jpeg",
     },
   ];
 
@@ -38,11 +38,11 @@ const TeamFooter = () => {
               className="bg-white/10 backdrop-blur-lg border-none hover:transform hover:scale-105 transition-all duration-300"
             >
               <div className="p-6">
-                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
+                <div className="w-32 h-32 mx-auto rounded-full  overflow-hidden mb-4">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full  object-fill"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-white text-center mb-2">
