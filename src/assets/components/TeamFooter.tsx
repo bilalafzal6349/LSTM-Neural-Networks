@@ -11,17 +11,17 @@ const TeamFooter = () => {
     {
       name: "Anas Arshad",
       role: "Team Member",
-      image: "/public/anast.jpeg",
+      image: "/anast.jpeg",
     },
     {
       name: "Anas Tahir",
       role: "Team Member",
-      image: "/public/anasa.jpeg",
+      image: "/anasa.jpeg",
     },
     {
       name: "M Mubashir ",
       role: "Team Member",
-      image: "/public/mubashir.jpeg",
+      image: "/mubashir.jpeg",
     },
   ];
 
