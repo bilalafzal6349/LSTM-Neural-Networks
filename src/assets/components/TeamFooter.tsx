@@ -9,12 +9,12 @@ const TeamFooter = () => {
       image: "/mBilal.png",
     },
     {
-      name: "Anas Arshad",
+      name: "Anas Tahir",
       role: "Team Member",
       image: "/anast.jpeg",
     },
     {
-      name: "Anas Tahir",
+      name: "Anas Arshad",
       role: "Team Member",
       image: "/anasa.jpeg",
     },
