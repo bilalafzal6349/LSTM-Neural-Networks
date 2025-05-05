@@ -14,7 +14,7 @@ const TeamFooter = () => {
       image: "/anast.jpeg",
     },
     {
-      name: "Anas Arshad",
+      name: "Ans Arshad",
       role: "Team Member",
       image: "/anasa.jpeg",
     },
