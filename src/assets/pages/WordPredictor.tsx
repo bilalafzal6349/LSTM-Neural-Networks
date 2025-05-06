@@ -3,6 +3,7 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { toast } from "../hooks/use-toast";
 import Navbar from "../components/Navbar";
+import axios from "axios";
 import {
   Command,
   CommandEmpty,
@@ -26,10 +27,7 @@ const WordPredictor = () => {
   const generateSuggestions = (input: string) => {
     // This is a mock function - in a real app, you'd call your LSTM API
     const mockWords = {
-      the: ["quick", "best", "most", "great"],
-      i: ["am", "want", "need", "think"],
-      it: ["is", "was", "will", "could"],
-      // Add more word associations as needed
+      abcd: ["alphabets"],
     };
 
     const lastWord = input.split(" ").pop()?.toLowerCase() || "";
@@ -54,16 +52,26 @@ const WordPredictor = () => {
     setSuggestions(generateSuggestions(newText));
   };
 
-  const handlePredict = () => {
-    // This is a mock prediction - in a real app, you'd call your LSTM API
-    const mockPredictions = ["neural", "network", "learning", "data", "model"];
-    const randomPrediction =
-      mockPredictions[Math.floor(Math.random() * mockPredictions.length)];
-    setPrediction(randomPrediction);
-    toast({
-      title: "Prediction Generated",
-      description: "LSTM network has processed your input",
-    });
+  const handlePredict = async () => {
+    try {
+      const response = await axios.post("http://localhost:8000/api/chat", {
+        prompt: inputText, // make sure userInput is defined from your input field
+      });
+      console.log(response.data);
+      setPrediction(response.data.response);
+      const mockPrediction = [response.data.prediction];
+      toast({
+        title: "Prediction Generated",
+        description: "LSTM network has processed your input",
+      });
+    } catch (error) {
+      console.error("Prediction error:", error);
+      toast({
+        title: "Error",
+        description: "Failed to get prediction from the server",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
