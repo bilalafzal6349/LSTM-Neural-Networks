@@ -23,7 +23,7 @@ const Navbar = () => {
               to="/about"
               className="transition-colors hover:text-purple-400"
             >
-              About
+              Presentation
             </Link>
             <Link
               to="/documentation"
