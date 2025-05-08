@@ -4,7 +4,6 @@ import AnimatedBackground from "../components/AnimatedBackground";
 import PresentationFooter from "../components/presentationFooter";
 import IntroductionSlide from "../components/presentation/IntroductionSlide";
 import DetailedIntroductionSlide from "../components/presentation/DetailedIntroductionSlide";
-import LSTMSlide from "../components/presentation/LSTMSlide";
 import WhyLSTMSlide from "../components/presentation/WhyLSTMSlide";
 import WorkflowSlide from "../components/presentation/WorkflowSlide";
 import ModelArchitectureSlide from "../components/presentation/ModelArchitectureSlide";
@@ -18,7 +17,7 @@ const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animateIn, setAnimateIn] = useState(true);
 
-  const totalSlides = 10;
+  const totalSlides = 9;
 
   const nextSlide = () => {
     setAnimateIn(false);
@@ -52,7 +51,6 @@ const About = () => {
   const slides = [
     <IntroductionSlide key="intro" animateIn={animateIn} />,
     <DetailedIntroductionSlide key="detailed-intro" animateIn={animateIn} />,
-    <LSTMSlide key="what-lstm" animateIn={animateIn} />,
     <WhyLSTMSlide key="why-lstm" animateIn={animateIn} />,
     <WorkflowSlide key="workflow" animateIn={animateIn} />,
     <ModelArchitectureSlide key="model-arch" animateIn={animateIn} />,
@@ -63,10 +61,10 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900 overflow-x-hidden">
       <Navbar />
       <AnimatedBackground />
-      <div className="container mx-auto px-6 py-20 pt-28 min-h-[calc(100vh-4rem)]">
+      <div className="container mx-auto px-4 sm:px-6 py-20 pt-24 md:pt-28 min-h-[calc(100vh-4rem)] overflow-hidden">
         <div className="max-w-4xl mx-auto">
           {slides[currentSlide]}
 
