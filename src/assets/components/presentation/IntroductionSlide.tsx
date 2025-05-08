@@ -1,5 +1,5 @@
 import React from "react";
-import { Brain, CircuitBoard, Layers, Code, Cpu } from "lucide-react";
+import { Brain, CircuitBoard, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface SlideProps {
@@ -18,16 +18,25 @@ const IntroductionSlide: React.FC<SlideProps> = ({ animateIn }) => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: animateIn ? 1 : 0, scale: animateIn ? 1 : 0.9 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="text-5xl font-bold text-white mb-8 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 bg-clip-text text-transparent"
+        className="text-5xl font-bold text-white mb-4 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 bg-clip-text text-transparent"
       >
-        LSTM Word Predictor
+        Next-Word Prediction
       </motion.h1>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: animateIn ? 1 : 0, y: animateIn ? 0 : 20 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="text-2xl text-gray-300 mb-4"
+      >
+        AI-Powered Text Generation for Autocomplete & Chatbots
+      </motion.p>
 
       <motion.div
         className="flex items-center justify-center mb-8 flex-wrap gap-3"
         initial={{ opacity: 0 }}
         animate={{ opacity: animateIn ? 1 : 0 }}
-        transition={{ duration: 0.7, delay: 0.4 }}
+        transition={{ duration: 0.7, delay: 0.6 }}
       >
         <motion.div
           initial={{ scale: 0.5, rotate: -10 }}
@@ -68,16 +77,14 @@ const IntroductionSlide: React.FC<SlideProps> = ({ animateIn }) => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: animateIn ? 1 : 0, y: animateIn ? 0 : 30 }}
         transition={{ duration: 0.8, delay: 1.1 }}
+        className="mt-4"
       >
-        <p className="text-xl text-gray-300 leading-relaxed mb-4">
-          An advanced natural language processing system that predicts the next
-          word in a sequence using Long Short-Term Memory neural networks. This
-          cutting-edge technology learns patterns in language to provide
-          accurate and context-aware word suggestions.
+        <h3 className="text-xl text-purple-300 font-medium mb-4">Team:</h3>
+        <p className="text-lg text-gray-300 mb-4">
+          M Bilal Afzal | M Ans Arshad | Anas Tahir | Mubashir Iqbal
         </p>
-
-        <p className="text-lg text-purple-300 font-medium">
-          Developed by NLP Research Team
+        <p className="text-lg text-purple-300">
+          Government College University, Lahore
         </p>
       </motion.div>
     </motion.div>

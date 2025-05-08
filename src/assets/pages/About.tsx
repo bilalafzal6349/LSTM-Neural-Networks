@@ -3,17 +3,22 @@ import Navbar from "../components/Navbar";
 import AnimatedBackground from "../components/AnimatedBackground";
 import PresentationFooter from "../components/presentationFooter";
 import IntroductionSlide from "../components/presentation/IntroductionSlide";
+import DetailedIntroductionSlide from "../components/presentation/DetailedIntroductionSlide";
 import LSTMSlide from "../components/presentation/LSTMSlide";
-import HowItWorksSlide from "../components/presentation/HowItWorkSlide";
-import TechnologiesSlide from "../components/presentation/TechnologiesSlide";
-import ThankYouSlide from "../components/presentation/ThankYouSlide";
+import WhyLSTMSlide from "../components/presentation/WhyLSTMSlide";
+import WorkflowSlide from "../components/presentation/WorkflowSlide";
+import ModelArchitectureSlide from "../components/presentation/ModelArchitectureSlide";
+import TechnologyUsedDetailedSlide from "../components/presentation/TechnologyUsedDetailedSlide";
+import TrainingResultsSlide from "../components/presentation/TrainingResultsSlide";
+import ApplicationsSlide from "../components/presentation/ApplicationsSlide";
+import FinalThankYouSlide from "../components/presentation/FinalThankYouSlide";
 import PresentationControls from "../components/presentation/PresentationControls";
 
 const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animateIn, setAnimateIn] = useState(true);
 
-  const totalSlides = 5;
+  const totalSlides = 10;
 
   const nextSlide = () => {
     setAnimateIn(false);
@@ -46,10 +51,15 @@ const About = () => {
 
   const slides = [
     <IntroductionSlide key="intro" animateIn={animateIn} />,
-    <LSTMSlide key="lstm" animateIn={animateIn} />,
-    <HowItWorksSlide key="how" animateIn={animateIn} />,
-    <TechnologiesSlide key="tech" animateIn={animateIn} />,
-    <ThankYouSlide key="thanks" animateIn={animateIn} />,
+    <DetailedIntroductionSlide key="detailed-intro" animateIn={animateIn} />,
+    <LSTMSlide key="what-lstm" animateIn={animateIn} />,
+    <WhyLSTMSlide key="why-lstm" animateIn={animateIn} />,
+    <WorkflowSlide key="workflow" animateIn={animateIn} />,
+    <ModelArchitectureSlide key="model-arch" animateIn={animateIn} />,
+    <TechnologyUsedDetailedSlide key="tech-used" animateIn={animateIn} />,
+    <TrainingResultsSlide key="training" animateIn={animateIn} />,
+    <ApplicationsSlide key="applications" animateIn={animateIn} />,
+    <FinalThankYouSlide key="thanks" animateIn={animateIn} />,
   ];
 
   return (

@@ -21,10 +21,10 @@ const PresentationFooter = () => {
           <div className="flex items-center mt-4 md:mt-0">
             <CircuitBoard className="h-5 w-5 text-purple-400 mr-1" />
             <span className="text-gray-400 text-sm mr-4">
-              Powered by Neural Networks
+              Powered by Arezal Group of Technologies
             </span>
             <a
-              href="https://github.com"
+              href="https://github.com/bilalafzal6349/LSTM-Neural-Networks"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"

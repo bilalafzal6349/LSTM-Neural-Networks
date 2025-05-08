@@ -57,9 +57,8 @@ const WordPredictor = () => {
       const response = await axios.post("http://localhost:8000/api/chat", {
         prompt: inputText, // make sure userInput is defined from your input field
       });
-      console.log(response.data);
-      setPrediction(response.data.response);
-      const mockPrediction = [response.data.prediction];
+      console.log(response);
+      setPrediction(response.data.choices[0].message.content);
       toast({
         title: "Prediction Generated",
         description: "LSTM network has processed your input",
