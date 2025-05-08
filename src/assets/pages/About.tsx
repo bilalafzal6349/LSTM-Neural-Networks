@@ -4,6 +4,7 @@ import AnimatedBackground from "../components/AnimatedBackground";
 import PresentationFooter from "../components/presentationFooter";
 import IntroductionSlide from "../components/presentation/IntroductionSlide";
 import DetailedIntroductionSlide from "../components/presentation/DetailedIntroductionSlide";
+import LSTMSlide from "../components/presentation/LSTMSlide";
 import WhyLSTMSlide from "../components/presentation/WhyLSTMSlide";
 import WorkflowSlide from "../components/presentation/WorkflowSlide";
 import ModelArchitectureSlide from "../components/presentation/ModelArchitectureSlide";
@@ -17,7 +18,7 @@ const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animateIn, setAnimateIn] = useState(true);
 
-  const totalSlides = 9;
+  const totalSlides = 10;
 
   const nextSlide = () => {
     setAnimateIn(false);
@@ -51,6 +52,7 @@ const About = () => {
   const slides = [
     <IntroductionSlide key="intro" animateIn={animateIn} />,
     <DetailedIntroductionSlide key="detailed-intro" animateIn={animateIn} />,
+    <LSTMSlide key="what-is-lstm" animateIn={animateIn} />,
     <WhyLSTMSlide key="why-lstm" animateIn={animateIn} />,
     <WorkflowSlide key="workflow" animateIn={animateIn} />,
     <ModelArchitectureSlide key="model-arch" animateIn={animateIn} />,
