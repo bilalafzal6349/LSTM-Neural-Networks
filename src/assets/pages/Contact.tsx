@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import AnimatedBackground from "../components/AnimatedBackground";
 import ContactOfTeam from "../../assets/components/presentation/ContactOfTeam";

@@ -24,14 +24,15 @@ const ContactOfTeam = () => {
       github: "alexm-dev",
     },
     {
-      name: "Ans Arshad",
-      role: "AI Engineer and Reasearch Specialist",
-      image: "/anasa.jpeg",
-      email: "james.wilson@lstm-ai.com",
-      phone: "+1 (555) 345-6789",
-      linkedin: "jameswilsondata",
-      github: "jwilson-ds",
+      name: "M. Ans Arshad",
+      role: "Student Artificial Intelligence",
+      image: "/anast.jpeg",
+      email: "ansarshad059@gmail.com",
+      phone: "+92 334 7268868",
+      linkedin: "https://www.linkedin.com/in/ans-arshad-60a5971b5/",
+      github: "https://github.com/rannss",
     },
+
     {
       name: "M Mubashir ",
       role: "AI Engineer and Reasearch Specialist",
