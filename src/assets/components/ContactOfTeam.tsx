@@ -3,7 +3,7 @@ import { Card } from "../components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "../components/ui/avatar";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
-const TeamFooter = () => {
+const ContactOfTeam = () => {
   const team = [
     {
       name: "M Bilal Afzal",
@@ -118,4 +118,4 @@ const TeamFooter = () => {
   );
 };
 
-export default TeamFooter;
+export default ContactOfTeam;

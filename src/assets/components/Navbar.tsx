@@ -135,17 +135,15 @@ const Navbar = () => {
               <Button
                 variant="outline"
                 size="icon"
-                onClick={() => window.open("https://github.com", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://github.com/bilalafzal6349/LSTM-Neural-Networks",
+                    "_blank"
+                  )
+                }
                 className="border-white/20 bg-white/10 hover:bg-white/20 transition-all duration-300"
               >
-                <a
-                  href="https://github.com/bilalafzal6349/LSTM-Neural-Networks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  <Github className="h-5 w-5" />
-                </a>
+                <Github className="h-5 w-5" />
               </Button>
             </div>
           </div>
