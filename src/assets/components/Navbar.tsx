@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "/", label: "Home" },
-    { to: "/about", label: "About" },
+    { to: "/about", label: "Presentation" },
     { to: "/documentation", label: "Documentation" },
     { to: "/contact", label: "Contact" },
   ];
@@ -100,7 +100,10 @@ const Navbar = () => {
                         variant="outline"
                         size="icon"
                         onClick={() =>
-                          window.open("https://github.com", "_blank")
+                          window.open(
+                            "https://github.com/bilalafzal6349/LSTM-Neural-Networks",
+                            "_blank"
+                          )
                         }
                         className="mr-2 border-white/20 bg-white/10 hover:bg-white/20"
                       >
