@@ -7,7 +7,7 @@ import {
   CardTitle,
   CardContent,
 } from "../components/ui/card";
-import ContactOfTeam from "../components/contactOfTeam";
+import ContactOfTeam from "../components/presentation/ContactOfTeam";
 import PresentationFooter from "../components/presentationFooter";
 
 const Documentation = () => {

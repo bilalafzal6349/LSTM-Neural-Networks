@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import AnimatedBackground from "../components/AnimatedBackground";
-import ContactOfTeam from "../components/contactOfTeam";
+import ContactOfTeam from "../components/presentation/ContactOfTeam";
 import PresentationFooter from "../components/presentationFooter";
 
 const Contact = () => {

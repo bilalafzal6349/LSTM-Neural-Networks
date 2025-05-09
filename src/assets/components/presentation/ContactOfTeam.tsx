@@ -1,6 +1,6 @@
 import React from "react";
-import { Card } from "../components/ui/card";
-import { Avatar, AvatarImage, AvatarFallback } from "../components/ui/avatar";
+import { Card } from "../ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
 const ContactOfTeam = () => {
