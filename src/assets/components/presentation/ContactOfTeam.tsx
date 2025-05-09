@@ -26,7 +26,7 @@ const ContactOfTeam = () => {
     {
       name: "M. Ans Arshad",
       role: "Student Artificial Intelligence",
-      image: "/anast.jpeg",
+      image: "/anasa.jpeg",
       email: "ansarshad059@gmail.com",
       phone: "+92 334 7268868",
       linkedin: "https://www.linkedin.com/in/ans-arshad-60a5971b5/",
