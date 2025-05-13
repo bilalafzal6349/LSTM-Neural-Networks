@@ -55,9 +55,10 @@ const TechnologyUsedDetailedSlide: React.FC<SlideProps> = ({ animateIn }) => {
           </div>
           <ul className="space-y-3">
             <li className="text-gray-300">• Fast API backend service</li>
-            <li className="text-gray-300">• PyTorch for LSTM model training</li>
+            <li className="text-gray-300">• Regex for cleaning of data </li>
+            <li className="text-gray-300">• NLTK library for tokenization</li>
             <li className="text-gray-300">• TensorFlow for data processing</li>
-            <li className="text-gray-300">• Hugging Face Transformers</li>
+
             <li className="text-gray-300">• RESTful API endpoints</li>
           </ul>
         </motion.div>
