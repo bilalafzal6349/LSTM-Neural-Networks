@@ -99,8 +99,7 @@ const TrainingResultsSlide: React.FC<SlideProps> = ({ animateIn }) => {
                 </div>
                 <div className="bg-gray-800/50 p-3 rounded-md flex-1">
                   <p className="text-gray-200">
-                    Input:{" "}
-                    <span className="text-purple-300">"How are you"</span>
+                    Input: <span className="text-purple-300">"How are "</span>
                   </p>
                 </div>
               </div>
@@ -117,9 +116,7 @@ const TrainingResultsSlide: React.FC<SlideProps> = ({ animateIn }) => {
                 </div>
                 <div className="bg-gray-800/50 p-3 rounded-md flex-1">
                   <p className="text-gray-200">
-                    Output: <span className="text-green-400">"doing"</span>{" "}
-                    (76%),
-                    <span className="text-blue-400">"feeling"</span> (20%)
+                    Output: <span className="text-green-400">"you"</span>{" "}
                   </p>
                 </div>
               </div>
