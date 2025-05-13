@@ -88,6 +88,12 @@ const WhyLSTMSlide: React.FC<SlideProps> = ({ animateIn }) => {
           <span className="text-orange-400 font-medium">needs</span> to take a
           loan.
         </p>
+        <p className="text-gray-300 text-sm md:text-base">
+          <span className="text-yellow-400 font-medium">Last year</span>, due to
+          his job situation and financial conditions, he{" "}
+          <span className="text-orange-400 font-medium">had</span> to take a
+          loan.
+        </p>
       </motion.div>
     </motion.div>
   );

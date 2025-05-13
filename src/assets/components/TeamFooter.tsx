@@ -6,7 +6,7 @@ const TeamFooter = () => {
     {
       name: "M Bilal Afzal",
       role: "Team Member",
-      image: "/mBilal.png",
+      image: "/billal.jpeg",
     },
     {
       name: "Anas Tahir",
@@ -16,7 +16,7 @@ const TeamFooter = () => {
     {
       name: "Ans Arshad",
       role: "Team Member",
-      image: "/anasa.jpeg",
+      image: "/annss.jpeg",
     },
     {
       name: "M Mubashir ",

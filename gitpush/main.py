@@ -25,7 +25,7 @@ async def chat(prompt: req):
         f"Text: {prompt}"
     )
     url = "https://api.groq.com/openai/v1/chat/completions"
-    API_KEY = "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"
+    API_KEY = "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"
     headers = {
         "Authorization":f"Bearer {API_KEY}",
         "Content-Type":"application/json"

@@ -56,7 +56,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-3">
             <span className="font-bold text-xl md:text-2xl bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
-              LSTM Word Predictor
+              Next Word Predictor
             </span>
           </Link>
         </div>
