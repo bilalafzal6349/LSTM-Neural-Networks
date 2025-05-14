@@ -27,7 +27,7 @@ const ContactOfTeam = () => {
     {
       name: "Anas Tahir",
       role: "MLOps Engineer",
-      image: "/public/WhatsApp Image 2025-05-13 at 1.42.13 PM.jpeg",
+      image: "/WhatsApp Image 2025-05-13 at 1.42.13 PM.jpeg",
       email: "tahiranas987@gamil.com",
       phone: "+92 3216967893",
       linkedin: "alex-martinez-ai",
